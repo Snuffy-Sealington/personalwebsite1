@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Your Name</title>
+    <title>The Saddlebag - Jordan Meier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">Your Name</h1>
+            <h1 class="logo">Jordan Meier</h1>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,60 +25,112 @@
 
     <!-- Main Content -->
     <main>
-        <section class="content-section">
+        <!-- Portfolio Hero -->
+        <section class="portfolio-hero">
+            <div class="portfolio-hero-content">
+                <span class="hero-badge-inline">🎒 Resources</span>
+                <h2>The Saddlebag</h2>
+                <p>Trail provisions for the entrepreneurial journey — connections, events, and insights worth carrying.</p>
+            </div>
+        </section>
+
+        <!-- LinkedIn Section -->
+        <section class="resource-section">
             <div class="container">
-                <h2>My Portfolio</h2>
-                <p class="subtitle">Here are some of my recent projects</p>
-                
-                <!-- Portfolio Grid -->
-                <div class="portfolio-grid">
-                    <!-- Project 1 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">Project 1</div>
-                        </div>
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of your project and what it does.</p>
-                        <a href="#" class="btn-small">View Project</a>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">Project 2</div>
-                        </div>
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of your project and what it does.</p>
-                        <a href="#" class="btn-small">View Project</a>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">Project 3</div>
-                        </div>
-                        <h3>Project Title 3</h3>
-                        <p>A brief description of your project and what it does.</p>
-                        <a href="#" class="btn-small">View Project</a>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">Project 4</div>
-                        </div>
-                        <h3>Project Title 4</h3>
-                        <p>A brief description of your project and what it does.</p>
-                        <a href="#" class="btn-small">View Project</a>
+                <h2 class="section-title">🤝 Connect on the Range</h2>
+                <div class="resource-card resource-card-featured">
+                    <div class="resource-icon-large">💼</div>
+                    <div class="resource-content">
+                        <h3>LinkedIn</h3>
+                        <p>
+                            Let's connect professionally! Whether you're a fellow entrepreneur, 
+                            investor, educator, or just someone passionate about startups — 
+                            I'd love to have you in my network. Drop by my profile to see what 
+                            I'm working on and let's start a conversation.
+                        </p>
+                        <a href="https://www.linkedin.com/in/jordanmeier97/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            🔗 Visit My Profile
+                        </a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Conference Section -->
+        <section class="resource-section resource-section-alt">
+            <div class="container">
+                <h2 class="section-title">🎪 Upcoming Roundup</h2>
+                <div class="resource-card resource-card-featured">
+                    <div class="resource-icon-large">🎤</div>
+                    <div class="resource-content">
+                        <h3>USASBE 2026 Conference</h3>
+                        <p>
+                            The United States Association for Small Business and Entrepreneurship (USASBE) 
+                            annual conference brings together the brightest minds in entrepreneurship education. 
+                            I'll be attending this year's gathering — a premier event for educators, researchers, 
+                            and practitioners shaping the future of how we teach and support entrepreneurs.
+                        </p>
+                        <a href="https://www.usasbe.org/events/usasbe2026" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            📅 View Conference Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading List Section -->
+        <section class="resource-section">
+            <div class="container">
+                <h2 class="section-title">📚 The Bookshelf</h2>
+                <p class="section-subtitle">Articles and papers that have shaped my thinking on entrepreneurship and education.</p>
+                
+                <div class="reading-grid">
+                    <!-- Article 1 -->
+                    <div class="reading-card">
+                        <div class="reading-icon">📄</div>
+                        <h3>Entrepreneurship Education Research</h3>
+                        <p class="reading-source">ScienceDirect</p>
+                        <p>
+                            A comprehensive look at entrepreneurship education and its evolving methodologies. 
+                            This paper explores how we can better prepare students for the realities of 
+                            building and scaling ventures.
+                        </p>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2666920X22000054?via%3Dihub" target="_blank" rel="noopener noreferrer" class="btn-small">
+                            📖 Read Article
+                        </a>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="reading-card">
+                        <div class="reading-icon">📄</div>
+                        <h3>Entrepreneurship & Innovation Research</h3>
+                        <p class="reading-source">SSRN</p>
+                        <p>
+                            An insightful academic paper examining the intersection of entrepreneurship 
+                            theory and practice. Essential reading for anyone interested in understanding 
+                            the foundations of startup success.
+                        </p>
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2719810" target="_blank" rel="noopener noreferrer" class="btn-small">
+                            📖 Read Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>🌅 Got More Trail Tips?</h2>
+                <p>Know a great resource, article, or event I should check out? I'm always looking to expand my saddlebag.</p>
+                <a href="contact.html" class="btn btn-primary">📮 Send a Recommendation</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Jordan Meier. All rights reserved.</p>
     </footer>
 </body>
 </html>
