@@ -1110,6 +1110,142 @@ footer {
 }
 
 /* ===========================
+   CONTACT PAGE
+   =========================== */
+
+.contact-hero {
+    background: 
+        linear-gradient(to bottom, rgba(41, 37, 36, 0.8) 0%, rgba(41, 37, 36, 0.9) 100%),
+        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 2rem 6rem;
+    text-align: center;
+    color: var(--cream);
+}
+
+.contact-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-hero h2 {
+    font-size: 3.5rem;
+    font-family: 'Rye', serif;
+    color: var(--sand);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-family: 'Lora', serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Methods Grid */
+.contact-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-method-card {
+    background: var(--cream);
+    border: 3px solid var(--sand);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(139, 69, 19, 0.15);
+    border-color: var(--leather);
+}
+
+.contact-method-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-method-card h3 {
+    font-family: 'Rye', serif;
+    font-size: 1.4rem;
+    color: var(--leather);
+    margin-bottom: 0.5rem;
+}
+
+.contact-method-card p {
+    font-family: 'Lora', serif;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    font-family: 'Lora', serif;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--leather);
+    text-decoration: underline;
+}
+
+/* Topics Grid */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.topic-card {
+    background: var(--white);
+    border: 2px solid var(--sand);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.topic-card:hover {
+    border-color: var(--leather);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.12);
+}
+
+.topic-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.topic-card h4 {
+    font-family: 'Rye', serif;
+    font-size: 1.1rem;
+    color: var(--leather);
+    margin-bottom: 0.5rem;
+}
+
+.topic-card p {
+    font-family: 'Lora', serif;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ===========================
    RESPONSIVE DESIGN
    =========================== */
 
@@ -1275,5 +1411,35 @@ footer {
     
     .reading-card {
         padding: 1.5rem;
+    }
+    
+    /* Contact page responsive */
+    .contact-hero {
+        padding: 8rem 1.5rem 4rem;
+    }
+    
+    .contact-hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .contact-methods-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .topic-card {
+        padding: 1.25rem;
+    }
+    
+    .topic-icon {
+        font-size: 2rem;
     }
 }
